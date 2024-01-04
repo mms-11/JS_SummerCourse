@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Somadora</title>
+    <style>
+        body{
+            font: normal 18pt Arial;
+
+        }
+
+        input{
+            font: normal 18 pt Arial;
+            width: 150px;
+        }
+
+        div#resultado{
+           margin-top: 20px;
+           background-color: blueviolet;
+        }
+    </style>
+   
+  
+</head>
+<body>
+    <h1>Some 2 valores</h1>
+    <input type="number" name ="caixa1" id="caixa1">
+    <strong>+</strong>
+    <input type="number" name="caixa2" id="caixa2">
+    <input type="button" value="Executar" onclick = "somar()">
+    <div id="resultado">Resultado</div>
+
+    <script>
+        function somar(){
+            var n1 = window.document.getElementById('caixa1')
+            var n2 = window.document.querySelector('input#caixa2')
+            var total = window.document.getElementById('resultado')
+            var num1 = Number(n1.value)
+            var num2 = Number(n2.value)
+            var Total = num1 + num2
+            total.innerHTML = `a soma de ${num1} e ${num2} é igual a ${Total}`
+
+        }
+    </script>
+</body>
+</html>
