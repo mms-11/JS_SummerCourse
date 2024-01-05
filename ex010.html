@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detran</title>
+   
+</head>
+<body>
+    <h1>Limite de Velocidade</h1>
+    Digite a velocidade: <input type="number" name="txtvel" id="txtvel">
+    <input type="button" value="Verifique" onclick="verificar()">
+    <div id="resultado"></div>
+
+    <script>
+        function verificar() {
+            var txtv = window.document.querySelector('input#txtvel');
+            var res = window.document.querySelector('div#resultado');
+            var velo = Number(txtv.value);
+            
+            res.innerHTML = `Sua velocidade é ${velo} km/h`;
+
+            if (velo > 60) {
+                res.innerHTML += `<br>Você ultrapassou o limite de velocidade`;
+            }
+        }
+    </script>
+</body>
+</html>
