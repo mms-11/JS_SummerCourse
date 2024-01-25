@@ -1,0 +1,23 @@
+body{
+    margin: 0;
+    padding: 0;
+    background: rgb(152, 212, 61);
+    font-size: 1.3em;
+    line-height: 1.5em;
+}
+
+.container{
+background: white;
+max-width: 640px;
+border-radius: 30px;
+padding: 20px;
+margin: 50px auto;
+
+}
+#relogio{
+font-size: 3em;
+}
+
+.pausado{
+    background: red;
+}
