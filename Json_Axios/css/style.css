@@ -1,0 +1,66 @@
+
+:root{
+    --primary-color: rgb(198, 210, 30);
+}
+
+
+
+
+
+*{
+    box-sizing: border-box;
+    outline:0 ;
+    
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background: var(--primary-color);
+    font-size: 1.3em;
+    line-height: 1.5em;
+
+
+}
+
+.container{
+    max-width: 640px;
+    margin: 50px auto;
+    background: whitesmoke;
+    padding: 20px;
+    border-radius: 11px;
+}
+
+form input, form label, form button{
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+
+}
+
+form input{
+    font-size: 24px;
+    height: 50px;
+    padding: 0 20px;
+}
+
+form input:focus{
+    outline: 1px solid var(--primary-collor);
+
+}
+
+form button{
+    background-color: rgb(198, 210, 30);;
+    font-size: 20px;
+    border: none;
+    font-weight: 700;
+    height: 50px;
+    cursor: pointer;
+}
+
+form button:hover{
+    background: rgb(53, 77, 8);
+}
+.resultado{
+    width: 100%;
+}
