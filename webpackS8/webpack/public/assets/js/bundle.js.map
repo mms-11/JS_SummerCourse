@@ -1,0 +1,1 @@
+{"version":3,"file":"bundle.js","mappings":";;;;;AAAAA,MAAM,CAACC,KAAK,CAAC,WAAW,CAAC;AACzBC,OAAO,CAACC,GAAG,CAAC,MAAM,CAAC,C","sources":["webpack://webpack/./src/index.js"],"sourcesContent":["window.alert('alo mindo');\r\nconsole.log('olaa');"],"names":["window","alert","console","log"],"sourceRoot":""}
